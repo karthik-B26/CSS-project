@@ -1,0 +1,212 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+   
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    height: 100vh;
+    width: 100vw;
+     gap: 0.5rem;
+     background-color: black;
+     
+}
+.player {
+    background-color: black;
+    grid-column: 1 / 13;
+    grid-row: 12;
+    color: white;
+}
+.main {
+    background-color: #580e0e;
+    grid-column: 4 / 13;
+    grid-row: 1 / 12;
+    color: white;
+    overflow: scroll;
+}
+.sidebar {
+    background-color: #000;
+    grid-column: 1 / 4;
+    grid-row: 1 / 12;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navoptions a {
+    text-decoration: none;
+    color: white;
+    line-height: 2.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+.navoptions {
+    text-decoration: none;
+    opacity: 0.5;
+    margin: 0.5rem;
+}
+.navoptions:hover{
+    opacity: 1;
+}
+.navigation {
+    width: 100%;
+    height: 20%;
+    flex-shrink: 0;
+    background-color: #121212;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navoptions svg {
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+}
+.library {
+    background-color: #121212;
+    height: 80%;
+    border-radius: 0.75rem;
+}
+.toplib {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top:1rem;  
+    margin-bottom: 1rem;
+
+}
+.toplib a{
+    color: white;
+    text-decoration: none; 
+}
+.toplib svg {
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+    opacity: 0.5;
+    
+}
+.toplib svg:hover { 
+    opacity: 1;
+}
+.libcont {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.5;
+}
+
+.toplib > svg {
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+    margin-right: 1rem;
+}
+.toplib > svg:first-of-type {
+    margin-left: auto;
+}
+.libcont:hover {
+    
+    opacity: 1;
+}
+.card{
+    height: 30%;
+    background-color: #232323;
+    margin: 1.5rem 0.4rem 1.5rem 0.4rem;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+}
+.p1{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.p2{
+    
+    font-size: 1rem;
+    opacity: 0.9;
+}
+.badge {
+    
+    border: none;
+    border-radius: 100px;
+    background-color: white;
+    color: black;
+    padding: 0.25rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+p {
+    margin-block: 0.7em;
+}
+.main{
+    background-color: #121212;
+    padding-left: 1.5rem;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 4rem;
+}
+.dir img{
+    margin-left:0.75rem;
+}
+.navbtn {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin-right:1rem;
+}
+.darkbadge{
+    background-color: black;
+    color:white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+
+    
+}
+.navbtn i {
+    margin-left: 0.5rem;
+}
+.cardmain {
+    height: 300px;
+    width: 200px;
+    background-color: #232323;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.cardcont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.cardmain img{
+    width: 100%;
+    border-radius: 0.5rem;
+    
+   
+}
+
+.conttittle{
+    font-weight: 600;
+}
+.contdesc{
+    opacity: 0.7;
+    font-size: 0.85rem;
+}
+.main h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
